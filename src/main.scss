@@ -1,4 +1,59 @@
 .App {
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	background-color: #111;
+
+	.options {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		button {
+			width: 180px;
+		}
+		.connect-wallet {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.contract-call-static,
+		.contract-call-stateful,
+		.new-contract,
+		.get-status,
+		.get-many-status {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+		.spend {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.group {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				width: 60%;
+				input {
+					width: 230px;
+					border-radius: 0.25rem 0 0 0.25rem;
+				}
+				button {
+					border-radius: 0 0.25rem 0.25rem 0;
+				}
+			}
+		}
+		span {
+			color: grey;
+			margin: 0.5rem 0;
+			&.hidden {
+				visibility: hidden;
+			}
+		}
+	}
 }
